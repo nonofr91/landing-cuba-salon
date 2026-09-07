@@ -1,0 +1,250 @@
+:root {
+  --bg: #FFFEF9;
+  --bg-alt: #F9F5F1;
+  --ink: #222222;
+  --gold: #BFB33B;
+  --cuba-blue: #0047AB;
+  --cuba-red: #C41E3A;
+  --green: #4A7C2A;
+  --brown: #8B5A2B;
+  --white: #FFFFFF;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand {
+  font-family: 'Archivo Black', 'Oswald', 'Bebas Neue', sans-serif;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background: var(--cuba-blue);
+  color: var(--white);
+  padding: 16px 0;
+}
+
+.brand {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.brand-sip {
+  color: var(--white);
+  background: var(--cuba-red);
+  padding: 2px 8px;
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.brand-cgt {
+  color: var(--cuba-blue);
+  background: var(--white);
+  padding: 2px 8px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.tagline {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Hero */
+.hero {
+  padding: 48px 0 32px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 8vw, 3.6rem);
+  color: var(--cuba-blue);
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--brown);
+  margin: 0 0 28px;
+  font-weight: 500;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 560px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* About */
+.about {
+  background: var(--bg-alt);
+  padding: 40px 0;
+}
+
+.about h2 {
+  color: var(--cuba-red);
+  margin: 32px 0 16px;
+  font-size: 1.4rem;
+}
+
+.about ul {
+  padding-left: 20px;
+  margin: 0 0 24px;
+}
+
+.about li {
+  margin-bottom: 10px;
+}
+
+.about strong {
+  color: var(--green);
+}
+
+/* CTA */
+.cta-section {
+  padding: 48px 0;
+}
+
+.cta-section h2 {
+  color: var(--cuba-blue);
+  font-size: 1.6rem;
+  margin: 0 0 12px;
+}
+
+.cta-section > .container > p {
+  margin: 0 0 24px;
+  color: var(--brown);
+}
+
+.form-wrapper {
+  background: var(--white);
+  border: 2px solid var(--cuba-blue);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 6px 6px 0 var(--gold);
+}
+
+/* Mautic form overrides */
+.mauticform_wrapper {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+.mauticform-button {
+  background: var(--cuba-blue) !important;
+  color: var(--white) !important;
+  border: none !important;
+  padding: 14px 24px !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  border-radius: var(--radius) !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
+.mauticform-input, .mauticform-textarea, .mauticform-selectbox {
+  border: 1px solid #ccc !important;
+  border-radius: var(--radius) !important;
+  padding: 10px !important;
+}
+
+.mauticform-label {
+  font-weight: 600 !important;
+  color: var(--ink) !important;
+}
+
+.mauticform-row {
+  margin-bottom: 16px !important;
+}
+
+.privacy-note {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 16px;
+}
+
+/* Donation preview */
+.donation-preview {
+  background: var(--bg-alt);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.donation-preview h2 {
+  color: var(--green);
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+}
+
+.donation-preview p {
+  margin: 0;
+  color: var(--brown);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--ink);
+  color: var(--white);
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+/* Confirmation / merci pages */
+.page-confirmation, .page-merci {
+  text-align: center;
+  padding: 64px 20px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.page-confirmation h1, .page-merci h1 {
+  color: var(--cuba-blue);
+  margin-bottom: 16px;
+}
+
+.page-merci .check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .form-wrapper {
+    padding: 14px;
+  }
+}

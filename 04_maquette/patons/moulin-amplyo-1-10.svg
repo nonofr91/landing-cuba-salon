@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="364mm" height="377mm" viewBox="0 0 364 377">
+<text x="20" y="15" font-size="8" fill="black">Moulin AMPLYO (échelle 1:10)</text>
+<rect x="20" y="20" width="87" height="75" fill="none" stroke="black" stroke-width="0.5"/>
+<text x="63.5" y="61.5" font-size="6" text-anchor="middle" fill="black">BASE</text>
+<rect x="20" y="95" width="87" height="187" fill="none" stroke="black" stroke-width="0.5"/>
+<text x="63.5" y="192.5" font-size="6" text-anchor="middle" fill="black">AVANT</text>
+<rect x="107" y="95" width="75" height="187" fill="none" stroke="black" stroke-width="0.5"/>
+<text x="144.5" y="192.5" font-size="6" text-anchor="middle" fill="black">DROITE</text>
+<rect x="182" y="95" width="87" height="187" fill="none" stroke="black" stroke-width="0.5"/>
+<text x="225.5" y="192.5" font-size="6" text-anchor="middle" fill="black">ARRIERE</text>
+<rect x="269" y="95" width="75" height="187" fill="none" stroke="black" stroke-width="0.5"/>
+<text x="306.5" y="192.5" font-size="6" text-anchor="middle" fill="black">GAUCHE</text>
+<rect x="20" y="282" width="87" height="75" fill="none" stroke="black" stroke-width="0.5"/>
+<text x="63.5" y="323.5" font-size="6" text-anchor="middle" fill="black">TOIT</text>
+<line x1="107" y1="95" x2="107" y2="282" stroke="red" stroke-width="0.3" stroke-dasharray="2,2"/>
+<line x1="182" y1="95" x2="182" y2="282" stroke="red" stroke-width="0.3" stroke-dasharray="2,2"/>
+<line x1="269" y1="95" x2="269" y2="282" stroke="red" stroke-width="0.3" stroke-dasharray="2,2"/>
+<line x1="20" y1="95" x2="344" y2="95" stroke="red" stroke-width="0.3" stroke-dasharray="2,2"/>
+<line x1="20" y1="282" x2="344" y2="282" stroke="red" stroke-width="0.3" stroke-dasharray="2,2"/>
+</svg>

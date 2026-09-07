@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(mkdir)",
+      "Exec(find)",
+      "Exec(pdfimages)",
+      "Exec(python3)",
+      "Exec(sed)"
+    ]
+  }
+}
