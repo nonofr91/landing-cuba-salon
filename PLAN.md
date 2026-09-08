@@ -128,8 +128,10 @@ Préparer un stand (bâche murale 2 m × 3 m + maquette en carton alvéolaire + 
 - [x] Emails Mautic : confirmation (id 14), bienvenue (id 15).
 - [x] Campagne double opt-in (id 18) : form → confirmation email → page visit → newsletter segment → welcome email.
 - [x] Compagnie SIPC-CGT créée dans Mautic (id 13).
-- [ ] DNS `cuba.sipc-cgt.fr` à créer (A → `90.92.98.245`).
-- [ ] Test end-to-end complet après propagation DNS.
+- [x] DNS `cuba.sipc-cgt.fr` créé, résolution OK et certificat Let’s Encrypt généré.
+- [x] Test formulaire : contact créé et ajouté au segment pending, email de confirmation envoyé.
+- [x] Test page `confirm.html` : page hit enregistré dans l'historique Mautic.
+- [ ] Crons Mautic à configurer pour que la transition vers le segment newsletter et l'envoi de l'email de bienvenue se fasse automatiquement.
 
 ## Prochaine étape
 
