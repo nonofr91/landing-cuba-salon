@@ -20,5 +20,28 @@
     <p>Merci ! Votre adresse email est bien confirmée. Vous recevrez désormais les nouvelles du projet <strong>Un moulin pour Cuba</strong>.</p>
     <p><a href="/">Retour à l'accueil</a></p>
   </main>
+
+  <iframe name="mautic-confirm" id="mautic-confirm" style="display:none;" title="Mautic confirmation"></iframe>
+
+  <div style="display:none;">
+    <form id="mauticform_confirmationcuba" action="https://mautic.cubixmedia.fr/form/submit?formId=4" method="post" enctype="multipart/form-data" target="mautic-confirm">
+      <input type="email" name="mauticform[email]" id="confirm-email" value="" required />
+      <input type="hidden" name="mauticform[formId]" value="4" />
+      <input type="hidden" name="mauticform[formName]" value="confirmationcuba" />
+      <button type="submit" id="confirm-submit">Confirmer</button>
+    </form>
+  </div>
+
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const email = params.get('email');
+      if (email) {
+        const input = document.getElementById('confirm-email');
+        input.value = email;
+        document.getElementById('confirm-submit').click();
+      }
+    })();
+  </script>
 </body>
 </html>
