@@ -118,6 +118,19 @@ Préparer un stand (bâche murale 2 m × 3 m + maquette en carton alvéolaire + 
 - Le budget d'impression d'une bâche 3 m × 2 m doit être validé en amont.
 - Exigence éditoriale : mettre en avant le concret (30 ans d'expérience, convois, installation, formation) et éviter les clichés cubains.
 
+## Phase 8 — Landing page et collecte digitale (faite)
+
+- [x] Landing page statique créée (`07_landing/index.html`, `style.css`, `confirm.html`, `merci.html`) et déployée via Coolify (`https://cuba.sipc-cgt.fr`).
+- [x] QR code final généré : `qr-code.png` et `sticker-print.png`.
+- [x] Flyer A5 mis à jour avec le QR final : `06_impression/flyer-a5-v9-qr-landing.png`.
+- [x] Formulaire Mautic `Landing Cuba Salon` (id 3) avec consentement RGPD.
+- [x] Segments Mautic : pending (id 8), confirmed (id 9), newsletter (id 10).
+- [x] Emails Mautic : confirmation (id 14), bienvenue (id 15).
+- [x] Campagne double opt-in (id 18) : form → confirmation email → page visit → newsletter segment → welcome email.
+- [x] Compagnie SIPC-CGT créée dans Mautic (id 13).
+- [ ] DNS `cuba.sipc-cgt.fr` à créer (A → `90.92.98.245`).
+- [ ] Test end-to-end complet après propagation DNS.
+
 ## Prochaine étape
 
-Générer le visuel IA final (idéalement via ChatGPT/DALL-E 3) et l'intégrer dans la bâche. Ensuite exporter un PDF/X prêt pour l'imprimeur et remplacer le QR code/lien de don par les vraies informations.
+Créer l'enregistrement DNS `cuba.sipc-cgt.fr` pointant vers `90.92.98.245`, puis tester la landing page, le formulaire, l'email de confirmation et l'email de bienvenue. Continuer la production du visuel IA final pour la bâche si nécessaire.
