@@ -124,14 +124,15 @@ Préparer un stand (bâche murale 2 m × 3 m + maquette en carton alvéolaire + 
 - [x] QR code final généré : `qr-code.png` et `sticker-print.png`.
 - [x] Flyer A5 mis à jour avec le QR final : `06_impression/flyer-a5-v9-qr-landing.png`.
 - [x] Formulaire Mautic `Landing Cuba Salon` (id 3) avec consentement RGPD.
+- [x] Formulaire de confirmation `Confirmation Cuba` (id 4) ajouté au segment newsletter (id 10).
 - [x] Segments Mautic : pending (id 8), confirmed (id 9), newsletter (id 10).
 - [x] Emails Mautic : confirmation (id 14), bienvenue (id 15).
-- [x] Campagne double opt-in (id 18) : form → confirmation email → page visit → newsletter segment → welcome email.
+- [x] Campagne `Cuba Salon Double Opt-In` (id 21) : form 3 → email 14 + pending segment.
+- [x] Campagne `Cuba Welcome` (id 22) : segment 10 → email 15.
 - [x] Compagnie SIPC-CGT créée dans Mautic (id 13).
 - [x] DNS `cuba.sipc-cgt.fr` créé, résolution OK et certificat Let’s Encrypt généré.
-- [x] Test formulaire : contact créé et ajouté au segment pending, email de confirmation envoyé.
-- [x] Test page `confirm.html` : page hit enregistré dans l'historique Mautic.
-- [ ] Crons Mautic à configurer pour que la transition vers le segment newsletter et l'envoi de l'email de bienvenue se fasse automatiquement.
+- [x] Test end-to-end : formulaire → email de confirmation → page confirm.html → segment newsletter → email de bienvenue.
+- [x] Crons Mautic actifs sur le service Coolify Mautic7.
 
 ## Prochaine étape
 
